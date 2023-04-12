@@ -1,1 +1,1 @@
-# rock-paper-scissors
+In this project I will be making the game rock paper scissors. I will be focusing on demonstrating what I've learned of javascript so far. My goal is to solidify the javscript concepts I've learned so far.
