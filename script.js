@@ -23,6 +23,7 @@ function getUserChoice() {
 }
 
 function playGame() {
-    getUserChoice();
-    getComputerChoice();
+    let computerChoice = getComputerChoice();
+    let userChoice = getUserChoice();
+    return [computerChoice, userChoice];
 }
