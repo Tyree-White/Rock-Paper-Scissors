@@ -12,5 +12,6 @@ function getComputerChoice () {
 }
 
 function getUserChoice () {
-    
+    let userChoice = prompt("Type your weapon of choice! (Rock/Paper/Scissors)").toUpperCase();
+    return userChoice;
 }
