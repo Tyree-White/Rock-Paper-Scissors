@@ -44,5 +44,7 @@ function playGame() {
 }
 
 function war() {
-    let battleResult = playGame();
+    for (let i = 0; i < 4; i++) {
+        let battleResult = playGame();
+    }
 }
