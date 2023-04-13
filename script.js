@@ -13,5 +13,12 @@ function getComputerChoice () {
 
 function getUserChoice () {
     let userChoice = prompt("Type your weapon of choice! (Rock/Paper/Scissors)").toUpperCase();
+    if (userChoice === "ROCK") {
+    } else if (userChoice === "PAPER") {
+    } else if (userChoice === "SCISSORS") {
+    } else {
+      alert("Sorry, but this weapon is not in your arsenal.")
+    }
     return userChoice;
 }
+
