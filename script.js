@@ -2,11 +2,15 @@ function getComputerChoice () {
     randomNumber = Math.floor((Math.random() * 3));
     let computerChoice;
     if (randomNumber === 0) {
-      computerChoice = "Rock";
+      computerChoice = "ROCK";
     } else if (randomNumber === 1) {
-      computerChoice = "Paper";
+      computerChoice = "PAPER";
     } else {
-      computerChoice = "Scissors";
+      computerChoice = "SCISSORS";
     }
     return computerChoice;
+}
+
+function getUserChoice () {
+    
 }
