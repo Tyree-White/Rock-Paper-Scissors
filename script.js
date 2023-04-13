@@ -23,5 +23,6 @@ function getUserChoice() {
 }
 
 function playGame() {
-
+    getUserChoice();
+    getComputerChoice();
 }
