@@ -42,3 +42,7 @@ function playGame() {
         return `You lost the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`
     }
 }
+
+function war() {
+    
+}
