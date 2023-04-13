@@ -39,10 +39,10 @@ function playGame() {
     } else if (userChoice === "SCISSORS" && computerChoice === "PAPER") {
         return `You have won the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`;
     } else if (userChoice === "SCISSORS" && computerChoice === "ROCK") {
-        return `You lost the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`
+        return `You lost the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`;
     }
 }
 
 function war() {
-    
+    let battleResult = playGame();
 }
