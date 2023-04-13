@@ -1,4 +1,4 @@
-function getComputerChoice () {
+function getComputerChoice() {
     randomNumber = Math.floor((Math.random() * 3));
     let computerChoice;
     if (randomNumber === 0) {
@@ -11,7 +11,7 @@ function getComputerChoice () {
     return computerChoice;
 }
 
-function getUserChoice () {
+function getUserChoice() {
     let userChoice = prompt("Type your weapon of choice! (Rock/Paper/Scissors)").toUpperCase();
     if (userChoice === "ROCK") {
     } else if (userChoice === "PAPER") {
@@ -22,3 +22,6 @@ function getUserChoice () {
     return userChoice;
 }
 
+function playGame() {
+
+}
