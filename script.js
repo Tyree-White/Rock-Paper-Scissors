@@ -25,5 +25,8 @@ function getUserChoice() {
 function playGame() {
     let computerChoice = getComputerChoice();
     let userChoice = getUserChoice();
-    return [computerChoice, userChoice];
+    if (userChoice === computerChoice) {
+      alert("The battle has resulted in a draw!")
+    }
+    return [`Your enemy chose ${computerChoice}!`, `You chose ${userChoice}!`];
 }
