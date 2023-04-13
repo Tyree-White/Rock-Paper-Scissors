@@ -46,5 +46,7 @@ function playGame() {
 function war() {
     for (let i = 0; i < 4; i++) {
         let battleResult = playGame();
+        let userPoints;
+        let computerPoints;
     }
 }
