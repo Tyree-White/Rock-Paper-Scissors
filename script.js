@@ -44,9 +44,17 @@ function playGame() {
 }
 
 function war() {
+    let userPoints = 0;
+    let computerPoints = 0;
     for (let i = 0; i < 4; i++) {
         let battleResult = playGame();
-        let userPoints;
-        let computerPoints;
+        if (battleResult.includes("draw")) {
+          userPoints += 1;
+          computerPoints += 1;
+        } else if (battleResult.includes("won")) {
+          userPoints += 1;
+        } else {
+          computerPoints +=1;
+        }
     }
 }
