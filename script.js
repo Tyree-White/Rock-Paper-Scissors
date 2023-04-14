@@ -1,6 +1,5 @@
 // Used to randomly select Rock, Paper, or Scissors.
 function getComputerChoice() {
-    // Randomly selects 0, 1, or 2.
     randomNumber = Math.floor((Math.random() * 3));
     let computerChoice;
     // Converts 0, 1, or 2 into Rock, Paper, or Scissors.
@@ -27,9 +26,7 @@ function getUserChoice() {
     return userChoice;
 }
 
-// Plays one round of Rock Paper Scissors.
 function playGame() {
-    // Stores user and computer choices in variables.
     let computerChoice = getComputerChoice();
     let userChoice = getUserChoice();
     // Compares user and computer choice and returns result of the game.
@@ -53,12 +50,10 @@ function playGame() {
 
 // Plays 5 rounds and keeps track of score.
 function war() {
-    // Stores user and computer points in variables.
     let userPoints = 0;
     let computerPoints = 0;
     // Loops through playGame() function 5 times.
     for (let i = 0; i < 5; i++) {
-        // Stores result of the playGame() function in variable.
         let battleResult = playGame();
         // Checks if the user drew, won, or lost and gives points depending on result.
         if (battleResult.includes("draw")) {
@@ -82,5 +77,5 @@ function war() {
         }
     }
 }
-// Calls war function to prompt user choice upon visting the site.
+
 war();
