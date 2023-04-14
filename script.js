@@ -46,15 +46,18 @@ function playGame() {
 function war() {
     let userPoints = 0;
     let computerPoints = 0;
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 5; i++) {
         let battleResult = playGame();
         if (battleResult.includes("draw")) {
           userPoints += 1;
           computerPoints += 1;
+          alert(`Round ${i+1} ${battleResult} You have ${userPoints} points. You're opponent has ${computerPoints}.`);
         } else if (battleResult.includes("won")) {
           userPoints += 1;
+          alert(`Round ${i+1} ${battleResult} You have ${userPoints} points. You're opponent has ${computerPoints}.`);
         } else {
           computerPoints +=1;
+          alert(`Round ${i+1} ${battleResult} You have ${userPoints} points. You're opponent has ${computerPoints}.`);
         }
     }
 }
