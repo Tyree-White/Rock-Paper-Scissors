@@ -59,5 +59,12 @@ function war() {
           computerPoints +=1;
           alert(`Round ${i+1} ${battleResult} You're opponent has been awarded one point! You have ${userPoints} points. You're opponent has ${computerPoints} points.`);
         }
+        if (i === 4 && userPoints === computerPoints) {
+          alert("Game Over! The war has ended in a statemate neither you or you're opponent has won or lost.");
+        } else if (i === 4 && userPoints > computerPoints) {
+          alert("Game Over! You have won the war.");
+        } else if (i === 4){
+          alert("Game Over! You have lost the war.")
+        }
     }
 }
