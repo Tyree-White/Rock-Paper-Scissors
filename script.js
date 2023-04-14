@@ -51,13 +51,13 @@ function war() {
         if (battleResult.includes("draw")) {
           userPoints += 1;
           computerPoints += 1;
-          alert(`Round ${i+1} ${battleResult} You have ${userPoints} points. You're opponent has ${computerPoints}.`);
+          alert(`Round ${i+1} ${battleResult} You and you're opponent have been awarded one point! You have ${userPoints} points. You're opponent has ${computerPoints} points.`);
         } else if (battleResult.includes("won")) {
           userPoints += 1;
-          alert(`Round ${i+1} ${battleResult} You have ${userPoints} points. You're opponent has ${computerPoints}.`);
+          alert(`Round ${i+1} ${battleResult} You have been awarded one point! You have ${userPoints} points. You're opponent has ${computerPoints} points.`);
         } else {
           computerPoints +=1;
-          alert(`Round ${i+1} ${battleResult} You have ${userPoints} points. You're opponent has ${computerPoints}.`);
+          alert(`Round ${i+1} ${battleResult} You're opponent has been awarded one point! You have ${userPoints} points. You're opponent has ${computerPoints} points.`);
         }
     }
 }
