@@ -74,7 +74,7 @@ function war() {
         }
         // Gives result of 5 round game by comparing user and computer points.
         if (i === 4 && userPoints === computerPoints) {
-          alert("Game Over! The war has ended in a statemate neither you or you're opponent has won or lost.");
+          alert("Game Over! The war has ended in a statemate neither you or you're opponent has won nor lost.");
         } else if (i === 4 && userPoints > computerPoints) {
           alert("Game Over! You have won the war.");
         } else if (i === 4){
