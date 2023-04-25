@@ -48,10 +48,6 @@ function playGame() {
     }
 }
 
-const rockBtn = document.querySelector('#rock');
-const paperBtn = document.querySelector('#paper');
-const scissorsBtn = document.querySelector('#scissors');
+const buttons = Array.from(document.querySelectorAll('button'));
+buttons.forEach(btn => btn.addEventListener('click', playGame))
 
-rockBtn.addEventListener('click', playGame);
-paperBtn.addEventListener('click', playGame);
-scissorsBtn.addEventListener('click', playGame);
