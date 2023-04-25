@@ -13,23 +13,9 @@ function getComputerChoice() {
     return computerChoice;
 }
 
-// Prompts user to select weapon of choice.
-function getUserChoice() {
-    let userChoice = prompt("Type your weapon of choice! (Rock/Paper/Scissors)").toUpperCase();
-    // Limits weapon of choice to only Rock, Paper, or Scissors.
-    if (userChoice === "ROCK") {
-    } else if (userChoice === "PAPER") {
-    } else if (userChoice === "SCISSORS") {
-    } else {
-      alert("Sorry, but this weapon is not in your arsenal.")
-    }
-    return userChoice;
-}
-
-function playGame() {
+function playGame(e) {
     let computerChoice = getComputerChoice();
-    let userChoice = getUserChoice();
-    // Compares user and computer choice and returns result of the game.
+    let userChoice = e.srcElement.value;
     if (userChoice === computerChoice) {
       return `The battle has resulted in a draw! Your enemy chose ${computerChoice}! You chose ${userChoice}!`;
     }
@@ -49,5 +35,5 @@ function playGame() {
 }
 
 const buttons = Array.from(document.querySelectorAll('button'));
-buttons.forEach(btn => btn.addEventListener('click', playGame))
+buttons.forEach(btn => btn.addEventListener('click', playGame));
 
