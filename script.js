@@ -47,3 +47,7 @@ function playGame() {
         return `You lost the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`;
     }
 }
+
+const rockBtn = document.querySelector('#rock');
+const paperBtn = document.querySelector('#paper');
+const scissorsBtn = document.querySelector('#scissors');
