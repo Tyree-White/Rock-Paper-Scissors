@@ -17,9 +17,8 @@ function playGame() {
     let computerChoice = getComputerChoice();
     let userChoice = this.value;
     if (userChoice === computerChoice) {
-      return `The battle has resulted in a draw! Your enemy chose ${computerChoice}! You chose ${userChoice}!`;
-    }
-    if (userChoice === "ROCK" && computerChoice === "SCISSORS") {
+        return `The battle has resulted in a draw! Your enemy chose ${computerChoice}! You chose ${userChoice}!`;
+    } else if (userChoice === "ROCK" && computerChoice === "SCISSORS") {
         return `You have won the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`;
     } else if (userChoice === "ROCK" && computerChoice === "PAPER"){
         return `You lost the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`;
