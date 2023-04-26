@@ -1,5 +1,6 @@
 #rock {
     background-color: red;
+    
 }
 
 #paper {
@@ -8,4 +9,10 @@
 
 #scissors {
     background-color: #52595d;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
 }
