@@ -16,20 +16,21 @@ function getComputerChoice() {
 function playGame() {
     let computerChoice = getComputerChoice();
     let userChoice = this.value;
+    const result = document.querySelector('.result')
     if (userChoice === computerChoice) {
-        console.log(`The battle has resulted in a draw! Your enemy chose ${computerChoice}! You chose ${userChoice}!`);
+        result.textContent = `The battle has resulted in a draw! Your enemy chose ${computerChoice}! You chose ${userChoice}!`;
     } else if (userChoice === "ROCK" && computerChoice === "SCISSORS") {
-        console.log(`You have won the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`);
+        result.textContent = `You have won the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`;
     } else if (userChoice === "ROCK" && computerChoice === "PAPER"){
-        console.log(`You lost the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`);
+        result.textContent = `You lost the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`;
     } else if (userChoice === "PAPER"  && computerChoice === "ROCK") {
-        console.log(`You have won the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`);
+        result.textContent = `You have won the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`;
     } else if (userChoice === "PAPER" && computerChoice === "SCISSORS") {
-        console.log(`You lost the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`);
+        result.textContent = `You lost the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`;
     } else if (userChoice === "SCISSORS" && computerChoice === "PAPER") {
-        console.log(`You have won the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`);
+        result.textContent = `You have won the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`;
     } else if (userChoice === "SCISSORS" && computerChoice === "ROCK") {
-        console.log(`You lost the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`)
+        result.textContent = `You lost the battle! Your enemy chose ${computerChoice}! You chose ${userChoice}!`;
     }
 }
 
