@@ -13,11 +13,12 @@
 
 .buttons {
     display: flex;
-    justify-content: center;
     justify-content: space-evenly;
 }
 
 .btn {
     width: 200px;
     height: 200px;
+    color: white;
+    font-size: 36px;
 }
