@@ -34,9 +34,6 @@ function playGame() {
     }
 }
 
-const buttons = Array.from(document.querySelectorAll('button'));
-buttons.forEach(btn => btn.addEventListener('click', playGame));
-
 function war() {
   let userPoints = 0;
   let computerPoints = 0;
@@ -57,7 +54,7 @@ function war() {
       }
       // Gives result of 5 round game by comparing user and computer points.
       if (i === 4 && userPoints === computerPoints) {
-        alert("Game Over! The war has ended in a statemate neither you or you're opponent has won nor lost.");
+        alert("Game Over! The war has ended in a stalemate neither you or you're opponent has won nor lost.");
       } else if (i === 4 && userPoints > computerPoints) {
         alert("Game Over! You have won the war.");
       } else if (i === 4){
@@ -65,3 +62,6 @@ function war() {
       }
   }
 }
+
+const buttons = Array.from(document.querySelectorAll('button'));
+buttons.forEach(btn => btn.addEventListener('click', war));
