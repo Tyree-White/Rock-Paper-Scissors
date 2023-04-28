@@ -39,6 +39,8 @@ let compScore = 0;
 
 function war() {
   const result = document.querySelector('.result').textContent;
+  const userPoints = document.querySelector('.userPoints');
+  const computerPoints = document.querySelector('.compPoints');
 
 }
 
