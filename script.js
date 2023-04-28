@@ -49,7 +49,7 @@ function war() {
   const gameOver = document.querySelector('.gameOver');
 }
 
-const buttons = Array.from(document.querySelectorAll('button'));
+const buttons = document.querySelectorAll('button');
 buttons.forEach(btn => btn.addEventListener('click', playGame));
 buttons.forEach(btn => btn.addEventListener('click', war));
 
