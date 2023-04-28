@@ -35,6 +35,8 @@ function playGame() {
 }
 
 function war() {
+  const result = document.querySelector('.result');
+
 }
 
 const buttons = Array.from(document.querySelectorAll('button'));
