@@ -41,7 +41,6 @@ function war() {
   const result = document.querySelector('.result').textContent;
   const userPoints = document.querySelector('.userPoints');
   const computerPoints = document.querySelector('.compPoints');
-
 }
 
 const buttons = Array.from(document.querySelectorAll('button'));
