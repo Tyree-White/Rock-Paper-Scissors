@@ -34,8 +34,11 @@ function playGame() {
     }
 }
 
+let userScore = 0;
+let compScore = 0;
+
 function war() {
-  const result = document.querySelector('.result');
+  const result = document.querySelector('.result').textContent;
 
 }
 
