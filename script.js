@@ -35,32 +35,6 @@ function playGame() {
 }
 
 function war() {
-  let userPoints = 0;
-  let computerPoints = 0;
-  // Loops through playGame() function 5 times.
-  for (let i = 0; i < 5; i++) {
-      let battleResult = playGame();
-      // Checks if the user drew, won, or lost and gives points depending on result.
-      if (battleResult.includes("draw")) {
-        userPoints += 1;
-        computerPoints += 1;
-        alert(`Round ${i+1} ${battleResult} You and you're opponent have been awarded one point! You have ${userPoints} points. You're opponent has ${computerPoints} points.`);
-      } else if (battleResult.includes("won")) {
-        userPoints += 1;
-        alert(`Round ${i+1} ${battleResult} You have been awarded one point! You have ${userPoints} points. You're opponent has ${computerPoints} points.`);
-      } else {
-        computerPoints +=1;
-        alert(`Round ${i+1} ${battleResult} You're opponent has been awarded one point! You have ${userPoints} points. You're opponent has ${computerPoints} points.`);
-      }
-      // Gives result of 5 round game by comparing user and computer points.
-      if (i === 4 && userPoints === computerPoints) {
-        alert("Game Over! The war has ended in a stalemate neither you or you're opponent has won nor lost.");
-      } else if (i === 4 && userPoints > computerPoints) {
-        alert("Game Over! You have won the war.");
-      } else if (i === 4){
-        alert("Game Over! You have lost the war.")
-      }
-  }
 }
 
 const buttons = Array.from(document.querySelectorAll('button'));
