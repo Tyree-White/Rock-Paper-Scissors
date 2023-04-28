@@ -65,5 +65,6 @@ function war() {
 
 const buttons = Array.from(document.querySelectorAll('button'));
 buttons.forEach(btn => btn.addEventListener('click', playGame));
+buttons.forEach(btn => btn.addEventListener('click', war));
 
-const result = document.querySelector('.result');
+
