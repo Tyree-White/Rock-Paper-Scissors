@@ -42,11 +42,19 @@ let userScore = 0;
 let compScore = 0;
 
 function war() {
-  // References to division
+  // References to divisions
   const result = document.querySelector('.result').textContent;
   const userPoints = document.querySelector('.userPoints');
-  const computerPoints = document.querySelector('.compPoints');
+  const computerPoints = document.querySelector('.computerPoints');
   const gameOver = document.querySelector('.gameOver');
+  if (result.includes('draw')) {
+  } else if (result.includes('won')) {
+      userScore += 1;
+  } else if (result.includes('lost')) {
+      compScore += 1;
+  }
+  console.log(userScore);
+  console.log(compScore);
 }
 
 const buttons = document.querySelectorAll('button');
