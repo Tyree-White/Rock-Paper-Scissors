@@ -16,7 +16,7 @@ function getComputerChoice() {
 function playGame() {
     // Stores user and computer choices
     let computerChoice = getComputerChoice();
-    let userChoice = this.value;
+    let userChoice = this.textContent;
     // Reference to result division
     const result = document.querySelector('.result')
     // Changes text content of result division based on conditions
