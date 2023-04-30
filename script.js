@@ -50,8 +50,10 @@ function war() {
   if (result.includes('draw')) {
   } else if (result.includes('won')) {
       userScore += 1;
+      userPoints.textContent = userScore;
   } else if (result.includes('lost')) {
       compScore += 1;
+      computerPoints.textContent = compScore;
   }
   console.log(userScore);
   console.log(compScore);
