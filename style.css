@@ -31,3 +31,16 @@ p {
 .content {
     padding: 200px 0px;
 }
+
+.score {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.userPoints,
+.computerPoints {
+    margin-top: 150px;
+    min-width: 200px;
+    height: 200px;
+    background: black;
+}
