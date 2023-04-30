@@ -56,3 +56,8 @@ p {
     margin: 0px 165px;
     font-size: 40px;
 }
+
+div .restart {
+    display: flex;
+    justify-content: center;
+}
