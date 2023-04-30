@@ -61,3 +61,15 @@ div .restart {
     display: flex;
     justify-content: center;
 }
+
+#restart {
+    background-color: #3882f6;
+    border-color: #3882f6;
+    border-radius: 5px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.hidden {
+    display: none;
+}
