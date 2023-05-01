@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 15px;
 }
 
 .btn {
@@ -63,11 +64,11 @@ div .restart {
 }
 
 #restart {
-    background-color: #013220;
-    border-color: #8b0000;
+    background-color: #b22222;
+    border-color: #b22222;
     border-radius: 5px;
     font-size: 30px;
-    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .hidden {
