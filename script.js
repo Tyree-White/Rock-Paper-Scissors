@@ -67,11 +67,9 @@ function war() {
 }
 
 function restart() {
-  if (1 === 1) {
     restartBtn.classList.add('hidden');
-  }
+    location.reload();
 }
-
 const restartBtn = document.querySelector('#restart');
 restartBtn.addEventListener('click', restart)
 
