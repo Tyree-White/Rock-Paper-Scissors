@@ -29,10 +29,6 @@ p {
     text-align: center;
 }
 
-.content {
-    padding: 100px 0px;
-}
-
 .score {
     display: flex;
     justify-content: space-evenly;
@@ -93,7 +89,7 @@ div .restart {
     display: flex;
     justify-content: space-evenly;
     color: white;
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 100px;
 }
 
