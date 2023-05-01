@@ -41,7 +41,6 @@ p {
 .userPoints,
 .computerPoints {
     display: flex;
-    margin-top: 80px;
     min-width: 200px;
     height: 200px;
     background: black;
@@ -88,4 +87,19 @@ div .restart {
 
 .draw {
     background-color: gray;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin-top: 40px;
+    font-size: 100px;
+}
+
+.you,
+.cpu {
+    min-width: 200px;
+    background: black;
+    text-align: center;
 }
