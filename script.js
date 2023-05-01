@@ -42,11 +42,13 @@ let userScore = 0;
 let compScore = 0;
 
 function war() {
-  // References to divisions
+  // References to divisions and restart button
   const result = document.querySelector('.result').textContent;
   const userPoints = document.querySelector('.userPoints');
   const computerPoints = document.querySelector('.computerPoints');
   const gameOver = document.querySelector('.gameOver');
+  const restart = document.querySelector('#restart');
+  // Adds points to user or computer depending on condition
   if (result.includes('draw')) {
   } else if (result.includes('won')) {
       userScore += 1;
@@ -55,8 +57,6 @@ function war() {
       compScore += 1;
       computerPoints.textContent = compScore;
   }
-  console.log(userScore);
-  console.log(compScore);
 }
 
 const buttons = document.querySelectorAll('button');
