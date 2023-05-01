@@ -57,6 +57,14 @@ function war() {
       compScore += 1;
       computerPoints.textContent = compScore;
   }
+  // Make restart button appear after user or computer gets to 5, and add a message indicating the winner
+  if (userScore === 5) {
+      gameOver.textContent = 'You have won the war! Your enemy has been defeated.'
+      restart.classList.remove('hidden');
+  } else if (compScore === 5) {
+      gameOver.textContent = 'You lost the war! The enemy has defeated you.'
+      restart.classList.remove('hidden');
+  }
 }
 
 const buttons = document.querySelectorAll('button');
