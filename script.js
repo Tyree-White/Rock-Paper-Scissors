@@ -43,11 +43,12 @@ let compScore = 0;
 
 function war() {
   // References to divisions and restart button
+  const resultColor = document.querySelector('.result');
   const result = document.querySelector('.result').textContent;
   const userPoints = document.querySelector('.userPoints');
   const computerPoints = document.querySelector('.computerPoints');
   const gameOver = document.querySelector('.gameOver');
-  // Adds points to user or computer depending on condition
+  // Adds points to user or computer depending on condition, and change color
   if (result.includes('draw')) {
   } else if (result.includes('won')) {
       userScore += 1;
@@ -55,6 +56,7 @@ function war() {
   } else if (result.includes('lost')) {
       compScore += 1;
       computerPoints.textContent = compScore;
+      resultColor.classList.add('lost');
   }
   // Make restart button appear after user or computer gets to 5, and add a message indicating the winner
   if (userScore === 5) {
@@ -63,6 +65,7 @@ function war() {
   } else if (compScore === 5) {
       gameOver.textContent = 'You lost the war! The enemy has defeated you.'
       restartBtn.classList.remove('hidden');
+      gameOver.classList.add('lost');
   }
 }
 

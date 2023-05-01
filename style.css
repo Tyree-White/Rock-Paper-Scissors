@@ -80,3 +80,7 @@ div .restart {
     font-size: 40px;
     background-color: #3882f6;
 }
+
+.lost {
+    background-color: #f54021;
+}
