@@ -50,13 +50,17 @@ function war() {
   const gameOver = document.querySelector('.gameOver');
   // Adds points to user or computer depending on condition, and change color
   if (result.includes('draw')) {
+      resultColor.classList.add('draw');
+      resultColor.classList.remove('lost')
   } else if (result.includes('won')) {
       userScore += 1;
       userPoints.textContent = userScore;
+      resultColor.classList.remove('lost', 'draw')
   } else if (result.includes('lost')) {
       compScore += 1;
       computerPoints.textContent = compScore;
       resultColor.classList.add('lost');
+      resultColor.classList.remove('draw');
   }
   // Make restart button appear after user or computer gets to 5, and add a message indicating the winner
   if (userScore === 5) {

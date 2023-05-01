@@ -84,3 +84,7 @@ div .restart {
 .lost {
     background-color: #f54021;
 }
+
+.draw {
+    background-color: gray;
+}
