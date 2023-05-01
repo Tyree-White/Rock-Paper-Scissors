@@ -51,7 +51,7 @@ p {
 }
 
 .result {
-    background: #f54021;
+    background: #3882f6;
     border-radius: 5px;
     margin: 0px 165px;
     font-size: 40px;
@@ -63,8 +63,8 @@ div .restart {
 }
 
 #restart {
-    background-color: #3882f6;
-    border-color: #3882f6;
+    background-color: #013220;
+    border-color: #8b0000;
     border-radius: 5px;
     font-size: 30px;
     margin-bottom: 15px;
@@ -72,4 +72,11 @@ div .restart {
 
 .hidden {
     display: none;
+}
+
+.gameOver {
+    border-radius: 5px;
+    margin: 0px 165px;
+    font-size: 40px;
+    background-color: #3882f6;
 }
