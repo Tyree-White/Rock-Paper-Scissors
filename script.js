@@ -47,7 +47,6 @@ function war() {
   const userPoints = document.querySelector('.userPoints');
   const computerPoints = document.querySelector('.computerPoints');
   const gameOver = document.querySelector('.gameOver');
-  const restart = document.querySelector('#restart');
   // Adds points to user or computer depending on condition
   if (result.includes('draw')) {
   } else if (result.includes('won')) {
@@ -66,6 +65,11 @@ function war() {
       restart.classList.remove('hidden');
   }
 }
+
+restart()
+
+const restart = document.querySelector('#restart');
+restart.addEventListener('click', restart)
 
 const buttons = document.querySelectorAll('button');
 buttons.forEach(btn => btn.addEventListener('click', playGame));
